@@ -1,0 +1,16 @@
+#!/bin/sh
+# Distro packagers may set the LOCALVER variable to add their distribution to
+# the version, e.g. 1.0-alpine.
+VERSION="${VERSION:-0.25.2}"
+
+ver=$(git describe 2>/dev/null)
+# shellcheck disable=SC2181
+if [ $? -ne 0 ]; then
+	ver="dev+$(git log -1 --format='%h' 2>/dev/null)"
+	if [ $? -ne 0 ]; then
+		# git presumed unavailable
+		ver="$VERSION"
+	fi
+fi
+
+printf -- '%s' "$ver${LOCALVER:+"-$LOCALVER"}"

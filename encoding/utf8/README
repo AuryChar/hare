@@ -1,0 +1,4 @@
+utf8: support for UTF-8 encoded data
+
+encoding::utf8 provides helper functions for working with runes and
+UTF-8 encoded slices.

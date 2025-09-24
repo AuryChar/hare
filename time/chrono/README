@@ -1,0 +1,11 @@
+chrono: timescales and chronologies
+
+The time::chrono module provides timescale utilities, and the foundations for
+chronology with the [[moment]] type, an abstract, extendable temporal object.
+
+Hare defines a chronology as a system for naming and ordering moments in time.
+In practice, it is the combination of a calendar and wall clock. For the
+Gregorian chronology, see the [[time::date::]] module.
+
+The [[timescale]] interface facilitates leapsecond aware [[convert]]ion of
+[[moment]]s. The [[tai]] timescale is the default intermediary timescale.
