@@ -1,3 +1,7 @@
+# NOTES (24/Sept/2025)
+
+I'll maintain this repository on https://git.sr.ht
+
 # The Hare programming language
 
 Hare is a systems programming language.
