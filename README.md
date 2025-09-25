@@ -1,6 +1,6 @@
 # NOTES (24/Sept/2025)
 
-I'll maintain this repository on https://git.sr.ht
+I'll maintain this repository on https://git.sr.ht/~aury/hare
 
 # The Hare programming language
 
